@@ -82,22 +82,21 @@ const ContentCarousel = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                className="mySwiper h-80 rounded-md mb-4 object-cover"
+                className="mySwiper h-80 rounded-md mb-4"
             >
 
                 {
                     data?.map((item, i) =>
-                        <SwiperSlide key={i}>
+                        <SwiperSlide key={i} className="h-80">
                             <img
-                                className='w-full h-full object-cover rounded-md'
                                 src={item.download_url}
+                                className="w-full h-full object-cover rounded-md"
                             />
                         </SwiperSlide>
                     )
                 }
 
             </Swiper>
-
 
             <Swiper
                 slidesPerView={5}
