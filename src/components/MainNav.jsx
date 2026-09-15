@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useEcomStore from '../store/ecom-store'
 import { Menu } from 'lucide-react';
+
 const MainNav = () => {
     const carts = useEcomStore((s) => s.carts)
     const user = useEcomStore(s => s.user)
@@ -31,13 +32,11 @@ const MainNav = () => {
 
 
 
-
                         <NavLink className={({ isActive }) =>
                             isActive
                                 ? 'bg-cyan-500 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-white hover:bg-slate-600 px-3 py-2 rounded-md text-sm font-medium'
                         }
-
 
                             to={'/shop'}>Shop</NavLink>
                         {/* Badge */}
@@ -45,13 +44,11 @@ const MainNav = () => {
 
 
 
-
                         <NavLink className={({ isActive }) =>
                             isActive
                                 ? 'bg-cyan-500 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-white hover:bg-slate-600 px-3 py-2 rounded-md text-sm font-medium'
                         }
-
 
                             to={'/cart'}>Cart
                             {
@@ -62,7 +59,6 @@ const MainNav = () => {
                         </NavLink>
                     </div>
 
-
                     {
                         user
                             ? <div className='flex items-center gap-4'>
@@ -71,7 +67,7 @@ const MainNav = () => {
                                     className='flex items-center gap-2 text-white hover:bg-slate-600 px-2 py-3 rounded-md'>
                                     <img
                                         className='w-9 h-8'
-                                        src='https://cdn.iconscout.com/icon/free/png-512/free-avatar-icon-svg-download-png-840229.png?f=webp&w=512' />
+                                        src='https://cdn-icons-png.flaticon.com/512/1006/1006363.png' />
 
                                     <Menu />
                                 </button>
@@ -92,9 +88,7 @@ const MainNav = () => {
                                     </div>
                                 }
 
-
                             </div>
-
 
                             : <div className='flex items-center gap-4'>
                                 <NavLink className={({ isActive }) =>
@@ -103,9 +97,7 @@ const MainNav = () => {
                                         : 'text-white hover:bg-slate-600 px-3 py-2 rounded-md text-sm font-medium'
                                 }
 
-
                                     to={'/register'}>Register</NavLink>
-
 
 
 
@@ -115,13 +107,10 @@ const MainNav = () => {
                                         : 'text-white hover:bg-slate-600 px-3 py-2 rounded-md text-sm font-medium'
                                 }
 
-
                                     to={'/login'}>Login</NavLink>
                             </div>
 
-
                     }
-
 
                 </div>
 
@@ -132,10 +121,10 @@ const MainNav = () => {
 
 export default MainNav
 
-
 //flex เป้นการจัดแนวนอน
 //่justify-between เป็นการแยกออกจากกัน
 //h-16 การปรับความสูง
 //bg- คือสี
 //item-center ปรับให้อยู่ตรงกลาง gap-4 คือระยะห่างของแต่ละ item
+
 
