@@ -60,7 +60,7 @@ const SidebarAdmin = () => {
  
             <div> 
                 <NavLink 
-                to={'/Home'}
+                to={'/home'}
                 className={({ isActive }) => 
                     isActive 
                         ? 'bg-cyan-600 rounded-md text-white px-4 py-2 flex items-center' 
