@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useEcomStore from '../store/ecom-store'
 import { Menu } from 'lucide-react';
-
 const MainNav = () => {
     const carts = useEcomStore((s) => s.carts)
     const user = useEcomStore(s => s.user)
@@ -72,7 +71,7 @@ const MainNav = () => {
                                     className='flex items-center gap-2 text-white hover:bg-slate-600 px-2 py-3 rounded-md'>
                                     <img
                                         className='w-9 h-8'
-                                        src='https://cdn-icons-png.flaticon.com/512/1006/1006363.png' />
+                                        src='https://cdn.iconscout.com/icon/free/png-512/free-avatar-icon-svg-download-png-840229.png?f=webp&w=512' />
 
                                     <Menu />
                                 </button>
@@ -139,3 +138,4 @@ export default MainNav
 //h-16 การปรับความสูง
 //bg- คือสี
 //item-center ปรับให้อยู่ตรงกลาง gap-4 คือระยะห่างของแต่ละ item
+
