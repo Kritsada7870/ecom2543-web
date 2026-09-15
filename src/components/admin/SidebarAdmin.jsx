@@ -60,7 +60,7 @@ const SidebarAdmin = () => {
  
             <div> 
                 <NavLink 
-                to={'../pages/Home'}
+                to={'https://ecom2543-web.vercel.app'}
                 className={({ isActive }) => 
                     isActive 
                         ? 'bg-cyan-600 rounded-md text-white px-4 py-2 flex items-center' 
