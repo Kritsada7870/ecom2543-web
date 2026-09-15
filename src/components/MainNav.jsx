@@ -83,7 +83,7 @@ const MainNav = () => {
                                         <button
                                             onClick={() => logout()}
                                             className='block px-4 py-2 hover:bg-gray-300'>
-                                            Logout
+                                            Login
                                         </button>
                                     </div>
                                 }
