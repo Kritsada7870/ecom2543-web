@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard,FolderKanban,ChartBarStacked,ShoppingCartPlus,CalendarArrowDown,LogOut } from 'lucide-react';
+import { LayoutDashboard, FolderKanban, ChartBarStacked, ShoppingCartPlus, CalendarArrowDown, LogOut } from 'lucide-react';
 
 const SidebarAdmin = () => {
     return (
