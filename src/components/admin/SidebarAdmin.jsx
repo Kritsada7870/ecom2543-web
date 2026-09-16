@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard } from 'lucide-react';
+import { LayoutDashboard,FolderKanban } from 'lucide-react';
 
 const SidebarAdmin = () => {
     return (
@@ -28,7 +28,7 @@ const SidebarAdmin = () => {
                         ? 'bg-teal-600 rounded-md text-white px-4 py-2 flex items-center'
                         : 'text-teal-200 px-4 py-2 hover:bg-teal-800 hover:text-cyan-300 rounded flex items-center'
                 }>
-                    <LayoutDashboard className='mr-2' />
+                    <FolderKanban className='mr-2' />
                     Manage
                 </NavLink>
 
